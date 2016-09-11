@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D06A75CC1D80144B00565BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A75CB1D80144B00565BE5 /* AppDelegate.swift */; };
+		D06A75CE1D80144B00565BE5 /* PresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A75CD1D80144B00565BE5 /* PresentingViewController.swift */; };
+		D06A75D11D80144B00565BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06A75CF1D80144B00565BE5 /* Main.storyboard */; };
+		D06A75D31D80144B00565BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06A75D21D80144B00565BE5 /* Assets.xcassets */; };
+		D06A75D61D80144B00565BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06A75D41D80144B00565BE5 /* LaunchScreen.storyboard */; };
+		D06A75E11D80144B00565BE5 /* XLPresentViewControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A75E01D80144B00565BE5 /* XLPresentViewControllerDemoTests.swift */; };
+		D06A75ED1D803EFA00565BE5 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A75EC1D803EFA00565BE5 /* PresentedViewController.swift */; };
+		D06A75EF1D804A0200565BE5 /* CustomPresentaionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A75EE1D804A0200565BE5 /* CustomPresentaionController.swift */; };
+		D0AFDD811D844076001228C1 /* CustomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFDD801D844076001228C1 /* CustomAnimatedTransitioning.swift */; };
+		D0AFDD831D8441CC001228C1 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFDD821D8441CC001228C1 /* MenuTableViewController.swift */; };
+		D0AFDD851D84EABF001228C1 /* CustomAnimatedTransitioningForPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFDD841D84EABF001228C1 /* CustomAnimatedTransitioningForPresent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D06A75DD1D80144B00565BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06A75C01D80144B00565BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06A75C71D80144B00565BE5;
+			remoteInfo = XLPresentViewControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D06A75C81D80144B00565BE5 /* XLPresentViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLPresentViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06A75CB1D80144B00565BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D06A75CD1D80144B00565BE5 /* PresentingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingViewController.swift; sourceTree = "<group>"; };
+		D06A75D01D80144B00565BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D06A75D21D80144B00565BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D06A75D51D80144B00565BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D06A75D71D80144B00565BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A75DC1D80144B00565BE5 /* XLPresentViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPresentViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06A75E01D80144B00565BE5 /* XLPresentViewControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLPresentViewControllerDemoTests.swift; sourceTree = "<group>"; };
+		D06A75E21D80144B00565BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A75EC1D803EFA00565BE5 /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		D06A75EE1D804A0200565BE5 /* CustomPresentaionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentaionController.swift; sourceTree = "<group>"; };
+		D0AFDD801D844076001228C1 /* CustomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		D0AFDD821D8441CC001228C1 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		D0AFDD841D84EABF001228C1 /* CustomAnimatedTransitioningForPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimatedTransitioningForPresent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D06A75C51D80144B00565BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A75D91D80144B00565BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D06A75BF1D80144B00565BE5 = {
+			isa = PBXGroup;
+			children = (
+				D06A75CA1D80144B00565BE5 /* XLPresentViewControllerDemo */,
+				D06A75DF1D80144B00565BE5 /* XLPresentViewControllerDemoTests */,
+				D06A75C91D80144B00565BE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D06A75C91D80144B00565BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D06A75C81D80144B00565BE5 /* XLPresentViewControllerDemo.app */,
+				D06A75DC1D80144B00565BE5 /* XLPresentViewControllerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D06A75CA1D80144B00565BE5 /* XLPresentViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFDD7F1D84403E001228C1 /* WithoutPresentationViewController */,
+				D0AFDD7E1D844023001228C1 /* WithPresentationViewController */,
+				D06A75EB1D80145200565BE5 /* Resource */,
+				D06A75CB1D80144B00565BE5 /* AppDelegate.swift */,
+				D0AFDD821D8441CC001228C1 /* MenuTableViewController.swift */,
+				D06A75CD1D80144B00565BE5 /* PresentingViewController.swift */,
+				D06A75EC1D803EFA00565BE5 /* PresentedViewController.swift */,
+			);
+			path = XLPresentViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		D06A75DF1D80144B00565BE5 /* XLPresentViewControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D06A75E01D80144B00565BE5 /* XLPresentViewControllerDemoTests.swift */,
+				D06A75E21D80144B00565BE5 /* Info.plist */,
+			);
+			path = XLPresentViewControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		D06A75EB1D80145200565BE5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D06A75D71D80144B00565BE5 /* Info.plist */,
+				D06A75CF1D80144B00565BE5 /* Main.storyboard */,
+				D06A75D21D80144B00565BE5 /* Assets.xcassets */,
+				D06A75D41D80144B00565BE5 /* LaunchScreen.storyboard */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		D0AFDD7E1D844023001228C1 /* WithPresentationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D06A75EE1D804A0200565BE5 /* CustomPresentaionController.swift */,
+				D0AFDD841D84EABF001228C1 /* CustomAnimatedTransitioningForPresent.swift */,
+			);
+			name = WithPresentationViewController;
+			sourceTree = "<group>";
+		};
+		D0AFDD7F1D84403E001228C1 /* WithoutPresentationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0AFDD801D844076001228C1 /* CustomAnimatedTransitioning.swift */,
+			);
+			name = WithoutPresentationViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D06A75C71D80144B00565BE5 /* XLPresentViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06A75E51D80144B00565BE5 /* Build configuration list for PBXNativeTarget "XLPresentViewControllerDemo" */;
+			buildPhases = (
+				D06A75C41D80144B00565BE5 /* Sources */,
+				D06A75C51D80144B00565BE5 /* Frameworks */,
+				D06A75C61D80144B00565BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLPresentViewControllerDemo;
+			productName = XLPresentViewControllerDemo;
+			productReference = D06A75C81D80144B00565BE5 /* XLPresentViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D06A75DB1D80144B00565BE5 /* XLPresentViewControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06A75E81D80144B00565BE5 /* Build configuration list for PBXNativeTarget "XLPresentViewControllerDemoTests" */;
+			buildPhases = (
+				D06A75D81D80144B00565BE5 /* Sources */,
+				D06A75D91D80144B00565BE5 /* Frameworks */,
+				D06A75DA1D80144B00565BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06A75DE1D80144B00565BE5 /* PBXTargetDependency */,
+			);
+			name = XLPresentViewControllerDemoTests;
+			productName = XLPresentViewControllerDemoTests;
+			productReference = D06A75DC1D80144B00565BE5 /* XLPresentViewControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D06A75C01D80144B00565BE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kotlinchina;
+				TargetAttributes = {
+					D06A75C71D80144B00565BE5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D06A75DB1D80144B00565BE5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D06A75C71D80144B00565BE5;
+					};
+				};
+			};
+			buildConfigurationList = D06A75C31D80144B00565BE5 /* Build configuration list for PBXProject "XLPresentViewControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D06A75BF1D80144B00565BE5;
+			productRefGroup = D06A75C91D80144B00565BE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D06A75C71D80144B00565BE5 /* XLPresentViewControllerDemo */,
+				D06A75DB1D80144B00565BE5 /* XLPresentViewControllerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D06A75C61D80144B00565BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A75D61D80144B00565BE5 /* LaunchScreen.storyboard in Resources */,
+				D06A75D31D80144B00565BE5 /* Assets.xcassets in Resources */,
+				D06A75D11D80144B00565BE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A75DA1D80144B00565BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D06A75C41D80144B00565BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A75CE1D80144B00565BE5 /* PresentingViewController.swift in Sources */,
+				D06A75EF1D804A0200565BE5 /* CustomPresentaionController.swift in Sources */,
+				D0AFDD831D8441CC001228C1 /* MenuTableViewController.swift in Sources */,
+				D06A75CC1D80144B00565BE5 /* AppDelegate.swift in Sources */,
+				D06A75ED1D803EFA00565BE5 /* PresentedViewController.swift in Sources */,
+				D0AFDD851D84EABF001228C1 /* CustomAnimatedTransitioningForPresent.swift in Sources */,
+				D0AFDD811D844076001228C1 /* CustomAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A75D81D80144B00565BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A75E11D80144B00565BE5 /* XLPresentViewControllerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D06A75DE1D80144B00565BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06A75C71D80144B00565BE5 /* XLPresentViewControllerDemo */;
+			targetProxy = D06A75DD1D80144B00565BE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D06A75CF1D80144B00565BE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06A75D01D80144B00565BE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D06A75D41D80144B00565BE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06A75D51D80144B00565BE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D06A75E31D80144B00565BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D06A75E41D80144B00565BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D06A75E61D80144B00565BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XLPresentViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotlinchina.XLPresentViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D06A75E71D80144B00565BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XLPresentViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotlinchina.XLPresentViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D06A75E91D80144B00565BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XLPresentViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotlinchina.XLPresentViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLPresentViewControllerDemo.app/XLPresentViewControllerDemo";
+			};
+			name = Debug;
+		};
+		D06A75EA1D80144B00565BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XLPresentViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kotlinchina.XLPresentViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XLPresentViewControllerDemo.app/XLPresentViewControllerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D06A75C31D80144B00565BE5 /* Build configuration list for PBXProject "XLPresentViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A75E31D80144B00565BE5 /* Debug */,
+				D06A75E41D80144B00565BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06A75E51D80144B00565BE5 /* Build configuration list for PBXNativeTarget "XLPresentViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A75E61D80144B00565BE5 /* Debug */,
+				D06A75E71D80144B00565BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06A75E81D80144B00565BE5 /* Build configuration list for PBXNativeTarget "XLPresentViewControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A75E91D80144B00565BE5 /* Debug */,
+				D06A75EA1D80144B00565BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D06A75C01D80144B00565BE5 /* Project object */;
+}
