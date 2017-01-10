@@ -16,7 +16,7 @@ class PresentedViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func dismissVC(sender: UIButton) {
+    @IBAction func dismissVC(_ sender: UIButton) {
         dismiss?()
     }
     

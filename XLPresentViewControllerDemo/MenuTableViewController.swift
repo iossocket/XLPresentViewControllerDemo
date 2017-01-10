@@ -14,11 +14,11 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PresentingViewController") as! PresentingViewController
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PresentingViewController") as! PresentingViewController
         if indexPath.row != 0 {
             vc.withPresentationViewController = true
         }
-        showViewController(vc, sender: nil)
+        show(vc, sender: nil)
     }
 }

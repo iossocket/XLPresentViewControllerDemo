@@ -19,31 +19,31 @@ class PresentingViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func present(sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PresentedViewController") as! PresentedViewController
+    @IBAction func present(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PresentedViewController") as! PresentedViewController
         vc.dismiss = { [weak self] in
             self?.dismiss()
         }
-        vc.modalPresentationStyle = .Custom
+        vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
         
-        showViewController(vc, sender: nil)
+        show(vc, sender: self)
     }
     
     private func dismiss() {
-        dismissViewControllerAnimated(true) { 
+        self.dismiss(animated: true) { 
             
         }
     }
 }
 
 extension PresentingViewController: UIViewControllerTransitioningDelegate {
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return withPresentationViewController ? CustomAnimatedTransitioningForPresent() : CustomAnimatedTransitioning()
     }
     
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-        return withPresentationViewController ? CustomPresentaionController(presentedViewController: presented, presentingViewController: presenting) : nil
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return withPresentationViewController ? CustomPresentaionController(presentedViewController: presented, presenting: presenting) : nil
     }
 }
 

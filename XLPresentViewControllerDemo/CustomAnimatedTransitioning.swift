@@ -15,16 +15,16 @@ extension UIColor {
 }
 
 class CustomAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
-        let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let toView = transitionContext.view(forKey: UITransitionContextViewKey.to)!
+        let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
         
-        let screenBounds = UIScreen.mainScreen().bounds
-        toView.frame = transitionContext.finalFrameForViewController(toVC)
+        let screenBounds = UIScreen.main.bounds
+        toView.frame = transitionContext.finalFrame(for: toVC)
         toView.alpha = 0
         
         let topView = UIView()
@@ -44,18 +44,18 @@ class CustomAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioni
         rightView.frame = CGRect(x: screenBounds.width / 2 + 30, y: screenBounds.height - 80, width: 0, height: 60)
         rightView.backgroundColor = UIColor.newBlueColor()
         
-        let container = transitionContext.containerView()
-        container?.addSubview(toView)
-        container?.addSubview(topView)
-        container?.addSubview(bottomView)
-        container?.addSubview(leftView)
-        container?.addSubview(rightView)
+        let container = transitionContext.containerView
+        container.addSubview(toView)
+        container.addSubview(topView)
+        container.addSubview(bottomView)
+        container.addSubview(leftView)
+        container.addSubview(rightView)
         
-        UIView.animateWithDuration(0.25, animations: {
+        UIView.animate(withDuration: 0.25, animations: {
             leftView.frame = CGRect(x: 0, y: screenBounds.height - 80, width: screenBounds.width / 2 - 30, height: 60)
             rightView.frame = CGRect(x: screenBounds.width / 2 + 30, y: screenBounds.height - 80, width: screenBounds.width / 2 - 30, height: 60)
-        }) { _ in
-            UIView.animateWithDuration(0.25, animations: {
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.25, animations: {
                 topView.frame = CGRect(x: 0, y: 0, width: screenBounds.width, height: screenBounds.height - 80)
                 bottomView.frame = CGRect(x: 0, y: screenBounds.height - 20, width: screenBounds.width, height: 20)
                 }, completion: { _ in
@@ -66,6 +66,6 @@ class CustomAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioni
                     rightView.removeFromSuperview()
                     transitionContext.completeTransition(true)
             })
-        }
+        }) 
     }
 }
