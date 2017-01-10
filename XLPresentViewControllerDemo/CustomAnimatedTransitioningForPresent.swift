@@ -25,8 +25,8 @@ class CustomAnimatedTransitioningForPresent: NSObject, UIViewControllerAnimatedT
         let duration = transitionDuration(using: transitionContext)
         UIView.animate(withDuration: duration, animations: { 
             toView.center = container.center
-            }, completion: { _ in
-                transitionContext.completeTransition(true)
+        }, completion: { _ in
+            transitionContext.completeTransition(true)
         }) 
     }
 }

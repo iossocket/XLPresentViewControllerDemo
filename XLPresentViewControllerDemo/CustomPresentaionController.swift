@@ -22,13 +22,11 @@ class CustomPresentaionController: UIPresentationController {
     }()
     
     override func presentationTransitionWillBegin() {
-        containerView!.addSubview(presentedView!)
         containerView!.addSubview(dimmingView)
-        
         if let transitionCoordinator = self.presentingViewController.transitionCoordinator {
-            transitionCoordinator.animate(alongsideTransition: {(context: UIViewControllerTransitionCoordinatorContext!) -> Void in
+            transitionCoordinator.animate(alongsideTransition: { _ in
                 self.dimmingView.alpha = 0.2
-                }, completion:nil)
+            }, completion: nil)
         }
     }
     
@@ -40,9 +38,9 @@ class CustomPresentaionController: UIPresentationController {
     
     override func dismissalTransitionWillBegin()  {
         if let transitionCoordinator = self.presentingViewController.transitionCoordinator {
-            transitionCoordinator.animate(alongsideTransition: {(context: UIViewControllerTransitionCoordinatorContext!) -> Void in
+            transitionCoordinator.animate(alongsideTransition: { _ in
                 self.dimmingView.alpha  = 0.0
-                }, completion:nil)
+            }, completion: nil)
         }
     }
     
